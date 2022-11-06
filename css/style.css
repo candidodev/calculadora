@@ -1,0 +1,80 @@
+*{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    display: flex;
+}
+#calc h1{
+    height: 2.5rem;
+    font-size: 15px;
+    font-weight: bold;/**/
+    color: lightgrey;
+}
+#calc{
+    width: 100vw;
+    height: 90vh;
+    padding: .5em; /**/
+    background-color: #555;
+    color: black;
+    flex-direction: column;
+}
+#display{
+    text-align: right;
+    border: 5px solid #222;
+    background-color: #999;
+}
+
+#previous-operand{
+    font-size: 1.4em;
+    overflow-wrap: break-word;
+    font-weight: 900;
+    color: #fff;/**/
+    min-height: 1.6em;/**/
+    padding: .2em;/**/
+}
+#current-operand{
+    overflow-wrap: break-word;
+    font-size: 2.5em;/**/
+    font-weight: 700;/**/
+    min-height: 1.6em;/**/
+    padding: .2em;/**/
+}
+#buttons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 5px;
+    margin-top:2vh;
+}
+#buttons button{
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;/**/
+    font-size: 1.2em;
+    background-color: rgb(182, 182, 182);
+    cursor: pointer;
+}
+#buttons #ac-btn{
+    grid-column: span 2;
+}
+#buttons button:hover{
+    background-color: #999;
+}
+#buttons .number{
+    background-color: white;
+}
+#buttons #equal-btn{
+    background-color: rgb(131, 185, 202);
+    grid-column: span 2;
+}
+#buttons #equal-btn:hover{
+    background-color: rgb(22, 170, 219);
+    grid-column: span 2;
+}
